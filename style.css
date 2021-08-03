@@ -1,0 +1,163 @@
+body{
+    background-color: #333;
+}
+nav{
+    background-color: #343a40;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 1rem;
+    padding: 10px 10px 10px 10px ;
+}
+
+li{
+    padding: 10px 10px;
+}
+@media screen and (max-width:620px){
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+a:hover{
+    background-color:blue;
+}
+
+
+
+
+
+
+
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 75vw;
+
+    margin:30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figure{
+    width: 300px;
+    border:1px solid #ccc;
+    margin:20px;
+    text-align: center;
+    box-shadow: 0px 0px 3px rgb(104,104,104);
+    transition: 100ms;
+}
+
+figure:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+figure img{
+    height: 200px;
+    width: 100%;
+}
+
+figcaption button{
+    padding: 10px 20px;
+    margin:10px;
+    font-size: 16px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    background:none;
+}
+
+figcaption button:hover{
+    background: lightslategray;
+    color:white;
+    cursor: pointer;
+}
+
+figcaption p{
+    font-weight: 300;
+} 
+
+
+#slideshow{
+    width: 70vw;
+    height: 700px;
+    margin: 50px auto;
+    overflow: hidden;
+  }
+  
+  .slide{
+    float:left
+  }
+  
+  .slide img{
+  
+    height: 700px;
+    width: 60vw;
+  }
+  
+  .wrapper{
+    /* border: 5px solid black; */
+    width: calc(70vw*6);
+    animation:  15s ease infinite slider;
+  }
+  
+  @keyframes slider {
+    /* Calculate the margin-left for 
+    each of the slides */
+  
+    16% {
+      margin-left: 0px;
+    }
+    
+    32% {
+      margin-left: calc(-60vw * 1);
+    }
+    
+    48% {
+      margin-left: calc(-60vw * 2);
+    }
+    
+    64% {
+      margin-left: calc(-60vw* 3);
+    }
+  
+    80%{
+      margin-left:calc(-60vw*4);
+    }
+  
+    96%{
+      margin-left:calc(-60vw*5);
+    }
+  }
+  
+  #about p {
+    width: 75%;
+    margin: auto;
+    margin-top: 70px;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    background-color: rgb(255 245 238 / 70%);
+    
+  }
+  
+  .highlight {
+    color: red;
+    font-weight: bold;
+  }
+  .contact{
+    text-align: center;
+    
+  }
